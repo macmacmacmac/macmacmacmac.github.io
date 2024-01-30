@@ -52,15 +52,6 @@
 </head>
 
 <body class="text-dark bg-dark">
-    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top"><a class="navbar-brand" href="#">Welcome to Mac's Portfolio!</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse-2" aria-controls="bs-navbar-collapse-2" aria-expanded="false" aria-label="Toggle navigation" id="button5"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            </ul>
-        </div>
-    </nav>
     <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
@@ -71,7 +62,7 @@
     </div>
     <div class="container text-light pt-5 pb-5" id="home">
         <h1 class="display-3 pt-5">Hello, World!</h1>
-        <p class="lead">I'm 'Mac' Pitipat Kongsomjit....<span class="ag-text-smaller">well his web portfolio at least</span><br>You can contact the real Mac below though!<br></p><button id="button2" class="btn btn-primary btn-lg" type="button">Contact me !</button></div>
+        <p class="lead pb-2 pt-2">I'm 'Mac' Pitipat Kongsomjit....<span class="ag-text-smaller">well his web portfolio at least</span><br>You can contact the real Mac below though!<br></p><button id="button2" class="btn btn-primary btn-lg" type="button">Contact me !</button></div>
     <div id="about-me" class="container">
         <div class="container pt-5 pb-5 bg-secondary rounded-lg">
             <div class="col-md-4 text-light ml-auto mr-auto d-block mw-100 ag-style-0">
@@ -223,67 +214,7 @@ collect data. The project aims to assist this process using CNNs</small></div>
             });
         };
     </script>
-    <script>
-        $(function() {
-            function scrollToPos(elm, offSets) {
-                var link = elm.attr('href');
-                if (link) {
-                    if ($(link).length > 0) {
-                        var p = $(link).offset().top - offSets;
-                        $('body,html').animate({
-                            scrollTop: p
-                        }, 700);
-                    }
-                }
-            }
-
-            if ($(".navbar.fixed-top").length > 0) {
-                var h = $(".navbar.fixed-top").outerHeight(true);
-                $('body').scrollspy({
-                    target: '.navbar.fixed-top',
-                    offset: h
-                });
-                $('.navbar.fixed-top .nav-link').click(function(e) {
-                    if ($(this).attr("href").substring(0, 1) == "#") {
-                        e.preventDefault();
-                        scrollToPos($(this), h);
-                    }
-                });
-            } else if ($(".navbar.sticky-top").length > 0) {
-                var h = $(".navbar.sticky-top").outerHeight(true);
-                $('body').scrollspy({
-                    target: '.navbar.sticky-top',
-                    offset: h
-                });
-                $('.navbar.sticky-top .nav-link').click(function(e) {
-                    if ($(this).attr("href").substring(0, 1) == "#") {
-                        e.preventDefault();
-                        scrollToPos($(this), h);
-                    }
-                });
-            } else if ($(".navbar.fixed-bottom").length > 0) {
-                var h = $(".navbar.fixed-bottom").outerHeight(true);
-                $('body').css("padding-bottom", h);
-                $('body').scrollspy({
-                    target: '.navbar.fixed-bottom'
-                });
-                $('.navbar.fixed-bottom .nav-link').click(function(e) {
-                    if ($(this).attr("href").substring(0, 1) == "#") {
-                        e.preventDefault();
-                        scrollToPos($(this), 0);
-                    }
-                });
-            } else if ($(".navbar").length > 0) {
-                $('.navbar .nav-link').click(function(e) {
-                    if ($(this).attr("href").substring(0, 1) == "#") {
-                        e.preventDefault();
-                        scrollToPos($(this), 0);
-                    }
-                });
-            }
-        });
-    </script>
-    <script src="https://publish.bragndrop.com/files/maccu/586/site/JavaScript/index_events.js?v=66312728fc09a9c0ff0875d3c8db6b75"></script>
+    <script src="https://publish.bragndrop.com/files/maccu/586/site/JavaScript/index_events.js?v=215e4ffa9d2c10361fe1efd988e3716f"></script>
 </body>
 
 </html>
